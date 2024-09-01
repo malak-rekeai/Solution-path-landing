@@ -1,0 +1,129 @@
+.contact {
+  padding: 50px 0;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form {
+  background-color: #315f90;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+}
+
+.contact-info {
+  margin-left: 10px;
+}
+
+.contact-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact-icons {
+  font-size: 1.5rem;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.careers-content form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.careers-content .form-group {
+  margin-bottom: 20px;
+}
+
+.careers-content .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.careers-content .form-group input,
+.careers-content .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.careers-content .form-group input:focus,
+.careers-content .form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.careers-content .btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.careers-content .btn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 0;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-content {
+    margin-bottom: 20px;
+  }
+
+  .careers-content form {
+    padding: 20px;
+  }
+
+  .careers-content .btn {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #41558b;    
+  --secondary-color: #7384ac;  
+  --accent-color: #99a8c6;     
+  --background-color: #F9F6ED; 
+  --light-color: #F9F6ED;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/* chage cursors */

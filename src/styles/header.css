@@ -1,0 +1,40 @@
+/* header.css */
+
+/* Navbar Container */
+.navbar{
+    padding: 10px 50px;
+    background-color: #c5def1 !important;
+}
+.nav-link{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.nav-link:hover{
+    color: var(--secondary-color);
+    box-shadow: 0 0px var(--secondary-color);
+}
+.btn-outline-success{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-outline-success:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:active,
+.navbar .nav-dropdown-item:hover {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        padding: 10px 20px;
+    }
+}

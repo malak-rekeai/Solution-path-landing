@@ -1,0 +1,95 @@
+/* General Container */
+.howWe {
+  position: relative;
+  background-color: var(--light-color);
+  padding: 20px;
+  /* border-radius: 50px; */
+  text-align: center;
+  /* border: 1px solid var(--secondary-color); */
+  box-shadow: 5px 5px 5px var(--secondary-color);
+}
+
+/* Header Styling */
+.howWe h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+
+.howWe h1 span {
+  font-size: 2.9rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+ 
+}
+
+/* Paragraph Styling */
+.howWe p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Steps Container */
+.how-we-start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Individual Steps */
+.step {
+  text-align: center;
+  margin: 0 20px;
+
+}
+
+/* Circle Styling */
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid var(--secondary-color); /* Blue frame color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.circle:hover {
+  background-color: var(--primary-color); 
+  color: white;
+}
+
+.circle svg {
+  color: var(--secondary-color); /* Blue icon color */
+  font-size: 2rem; /* Adjust icon size */
+  transition: color 0.3s ease;
+}
+
+.circle:hover svg {
+  color: white;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .how-we-start-container {
+      flex-direction: column;
+  }
+
+  .circle {
+      margin-left: 0;
+  }
+
+  .step-title {
+      margin-left: 0;
+  }
+}

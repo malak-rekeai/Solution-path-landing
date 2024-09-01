@@ -1,0 +1,69 @@
+/* heroBackground.css */
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+
+    background-color: #41558B;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23FFFFFF' stroke-width='30.2' stroke-opacity='0' %3E%3Ccircle fill='%2341558B' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23405284' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%233f4f7e' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%233d4c77' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%233c4971' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%233a466b' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23394364' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%2337405e' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23363d58' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23343a52' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2332374c' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23303446' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%232f3240' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%232d2f3a' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%232b2c35' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2328292f' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23262729' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23242424' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  
+  .hero-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding-top: -70px;
+
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  
+  .content h1 {
+    color: var(--light-color);
+
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .content p {
+    font-size: 1.1rem;
+    color: var(--light-color);
+    width: 80%;
+
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 80%;
+      top: 30%;
+      left: 50%;
+    }
+    .content h1 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .content p {
+      font-size: 1rem;
+      width: 100%;
+    }
+    .hero-container {
+      height: 60vh;
+      
+    }
+  }

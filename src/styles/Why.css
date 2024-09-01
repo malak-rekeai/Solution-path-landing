@@ -1,0 +1,91 @@
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .whyus{
+    padding: 50px 0;
+    background-color: var(--light-color);
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h3 span {
+    font-size: 150px; 
+    font-weight: 900;
+    color: var(--primary-color); /* Choose a color that matches your theme */
+  }
+  
+  .why {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--primary-color);
+    
+  }
+  
+  .why img {
+    margin-right: 15px;
+    
+  }
+  
+  .why h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .why p {
+    font-size: 14px;
+    color: #666;
+  }
+  .img-why{
+    position: relative;
+    margin-top: -60px;
+    left: 40%;
+  }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    h3 span {
+      font-size: 80px; /* Adjust the size for mobile */
+    }
+  
+    .head-mob {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .why {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .why img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .why h4 {
+      font-size: 16px;
+    }
+  
+    .why p {
+      font-size: 13px;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .img-why {
+      margin-top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
