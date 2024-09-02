@@ -1,4 +1,4 @@
-.footer-container {
+/* .footer-container {
   background-image: 
     linear-gradient(
       to right, 
@@ -9,6 +9,12 @@
       background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+} */
+
+.footer-container{
+  background-color: var(--primary-color);
   color: white;
   padding: 20px;
 }

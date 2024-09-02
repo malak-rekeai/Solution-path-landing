@@ -17,56 +17,107 @@ import {
 import { faGem, faHome, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../styles/footer.css";
 
+const currentYear = new Date().getFullYear();
+
 export default function App() {
   return (
-    <MDBFooter className="footer-container  text-center text-lg-start text-muted">
-      <MDBContainer className="">
-        <MDBRow>
-          <MDBCol md="3" className="mb-4">
-            <h3 className="footer-title">Solution Path</h3>
-            <div className="social-icons">
-              <a href="https://www.facebook.com/" className="me-4 foot-icon">
-                <FontAwesomeIcon icon={faFacebook}  />
-              </a>
-              <a href="https://twitter.com/" className="me-4 foot-icon">
-                <FontAwesomeIcon icon={faTwitter}  />
-              </a>
-              <a href="https://www.google.com/" className="me-4 foot-icon">
-                <FontAwesomeIcon icon={faGoogle}  />
-              </a>
-              <a href="https://www.instagram.com/" className="me-4 foot-icon">
-                <FontAwesomeIcon icon={faInstagram}  />
-              </a>
-              <a href="https://www.linkedin.com/" className="me-4 foot-icon">
-                <FontAwesomeIcon icon={faLinkedin}  />
-              </a>
+    <>
+      <footer className="footer-container">
+        <div className="container p-4 pb-0">
+          <section className="">
+            <div className="row">
+             
+              <div className="col-md-4 col-lg-4 col-xl-4  mt-3">
+                <h3 className="text-uppercase mb-4 font-weight-bold">
+                  Solution Path
+                </h3>
+                <p>
+                  We provide cutting-edge technology solutions to enhance your
+                  business efficiency. Let us help you navigate the path to
+                  success with innovative products and services.
+                </p>
+              </div>
+
+              <hr className="w-100 clearfix d-md-none" />
+
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold">
+                  Contact
+                </h6>
+                <p>
+                  <i className="fas fa-home mr-3"></i> Al Ghubrah South, Muscat,
+                  Oman
+                </p>
+                <p>
+                  <i className="fas fa-envelope mr-3"></i> info@solutionpath.com
+                </p>
+                <p>
+                  <i className="fas fa-phone mr-3"></i> + 968 7118 5327
+                </p>
+              </div>
+              <div className="col-md-4 col-lg-4 col-xl-4  mt-3">
+                <div className="w-100">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(Solution%20path)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  >
+                    <a href="https://www.gps.ie/">gps devices</a>
+                  </iframe>
+                </div>
+              </div>
             </div>
-          </MDBCol>
+          </section>
 
-          <MDBCol md="3" className="contact-footer mb-4">
-            <h3 className="footer-contact-title">Contact Us</h3>
-            <p>
-            <a href="https://www.linkedin.com/" className="me-2 foot-icon">
-                <FontAwesomeIcon icon={faEnvelope} size="x" />
-              </a>
-              <span className="fw-bold">Email</span>: name@gmail.com
-            </p>
-            <p>
-              <a href="https://www.linkedin.com/" className="me-2 foot-icon">
-                <FontAwesomeIcon icon={faHome} size="x" />
-              </a>
-              <span className="fw-bold">Phone</span>: +970 123456789
-            </p>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+          <hr className="my-3" />
 
-      <div className="footer-bottom text-center p-3">
-        © 2021 Copyright: 
-        <a className="text-reset fw-bold ms-1" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
-      </div>
-    </MDBFooter>
+          <section className="py-3 pt-0">
+            <div className="row d-flex align-items-center">
+              <div className="col-md-7 col-lg-8 text-center text-md-start">
+                <div className="py-3">© {currentYear} Copyright:</div>
+              </div>
+
+              <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <a
+                  className="btn btn-outline-light btn-floating m-1"
+                  href="#"
+                  role="button"
+                >
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+
+                <a
+                  className="btn btn-outline-light btn-floating m-1"
+                  href="#"
+                  role="button"
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+
+                <a
+                  className="btn btn-outline-light btn-floating m-1"
+                  href="#"
+                  role="button"
+                >
+                  <i className="fab fa-google"></i>
+                </a>
+
+                <a
+                  className="btn btn-outline-light btn-floating m-1"
+                  href="#"
+                  role="button"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </>
   );
 }
