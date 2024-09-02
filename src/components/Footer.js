@@ -26,7 +26,6 @@ export default function App() {
         <div className="container p-4 pb-0">
           <section className="">
             <div className="row">
-             
               <div className="col-md-4 col-lg-4 col-xl-4  mt-3">
                 <h3 className="text-uppercase mb-4 font-weight-bold">
                   Solution Path
